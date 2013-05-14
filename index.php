@@ -4,7 +4,7 @@
 	 * By John White (@Jontyy)
 	 */
 	 //Вывод всех ошибок
-	error_reporting(E_ALL);
+	// error_reporting(E_ALL);
 	define('SITE_PATH',realpath(__DIR__).'/');
 
 	/*Require necessary files.*/
