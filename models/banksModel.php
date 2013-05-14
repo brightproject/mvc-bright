@@ -3,10 +3,25 @@
 	class banksModel extends baseModel{
 		
 		public function getList(){
-			$return = array();
-			$return[0] = array('title'=>'Таблица банков');
+			// $return = array();
+			// $return[0] = array('title'=>'Таблица банков');
 
-			return $return;
+			// return $return;
+			$all  = $this->db->query('SELECT * FROM `banks`', null, 'assoc');                        // Вся таблица в ассоциативном массиве
+			// $name = $db->query('SELECT `name` FROM `table` WHERE `id`=?i', array($id), 'el');  // Одно значение
+			// $id   = $db->query('INSERT INTO `table` VALUES (?)', array('Новая строка'), 'id'); // Идентификатор только что вставленной строки
+			// $pattern = 'SELECT * FROM ?t WHERE `id`=?';
+			// $data    = array(banks, 2);
+			// $lists   = $this->db->query($pattern, $data)->row();
+			echo "<pre>";
+			print_r($all);
+			echo "</pre>"; 
+			foreach ($all as $post):
+			print_r($post['bank']); 
+			echo "<br>";
+			endforeach;
+			// $lists = $this->db->query('SELECT `early_repay` FROM `banks`');
+			// $lists = $this->db->query('SELECT `early_repay` FROM `banks` WHERE `early_repay`=?', array($early_repay), 'el');
 		}
 		
 		public function getAdd(){
@@ -42,4 +57,3 @@
 			return $return;
 		}		
 	}
-?>
