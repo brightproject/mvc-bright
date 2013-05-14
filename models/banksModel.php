@@ -13,13 +13,14 @@
 			// $pattern = 'SELECT * FROM ?t WHERE `id`=?';
 			// $data    = array(banks, 2);
 			// $lists   = $this->db->query($pattern, $data)->row();
-			echo "<pre>";
-			print_r($all);
-			echo "</pre>"; 
-			foreach ($all as $post):
-			print_r($post['bank']); 
-			echo "<br>";
-			endforeach;
+			// echo "<pre>";
+			// print_r($all);
+			// echo "</pre>"; 
+			// foreach ($all as $post):
+			// print_r($post['bank']); 
+			// echo "<br>";
+			// endforeach;
+			return $all;
 			// $lists = $this->db->query('SELECT `early_repay` FROM `banks`');
 			// $lists = $this->db->query('SELECT `early_repay` FROM `banks` WHERE `early_repay`=?', array($early_repay), 'el');
 		}
