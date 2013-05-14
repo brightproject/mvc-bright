@@ -21,12 +21,20 @@
           </p>
         <p align="center">
           <label>Досрочное погашение<br /><br />
-          <input value="" type="text" name="early_repay" id="early_repay">
+		  <select name="early_repay" id="early_repay">
+          <option>Да</option>
+          <option>Нет</option>
+		  </select>
           </label>
         </p>
         <p align="center">
-          <label>Ставка в рублях<br /><br />
-          <input value="" type="text" name="email" id="email">
+          <label>Ставка в рублях(%)<br /><br />
+		  <select name="rate_in_rub" id="rate_in_rub">
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+		  </select>
           </label>
         </p>
         <p align="center">
@@ -46,12 +54,12 @@
         </p>
         <p align="center">
           <label>Дополнительные расходы<br /><br />
-          <input value="" type="text" name="add_costs" id="add_costs">
+		  <textarea name="add_costs" id="add_costs"></textarea>
           </label>
         </p>		
         <p align="center">
           <label>Документы<br /><br />
-          <input value="" type="text" name="docs" id="docs">
+		   <textarea name="docs" id="docs"></textarea>
           </label>
         </p>
         <p align="center">
@@ -63,9 +71,3 @@
 
 	</body>
 </html>
-	<?php 	
-	// $pattern = 'INSERT INTO `users` SET `login`=?, `pass`=?, `email`=?';
-	// $data    = array($login, $pass, $email);
-	// $userId  = $db->query($pattern, $data, 'id');						
-	// echo 'Мы создали пользователя, его ID='.$userId;
-	?>
