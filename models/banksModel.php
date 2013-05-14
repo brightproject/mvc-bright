@@ -15,11 +15,15 @@
 
 			// return $return;
 				echo __DIR__;
-				$login = $_POST['login'];
-				$pass = $_POST['pass'];
-				$email = $_POST['email'];	
-				if (($login) || ($pass) || ($email) ) { 
-				$this->db->query('INSERT INTO `users` SET `login`=?, `pass`=?, `email`=?', array($login, $pass, $email), 'id');
+				$bank = (string)$_POST['bank'];
+				$early_repay = (string)$_POST['early_repay'];
+				$first_pay = (string)$_POST['first_pay'];	
+				$credit_period = (string)$_POST['credit_period'];	
+				$period_of_review = (string)$_POST['period_of_review'];	
+				$add_costs = (string)$_POST['add_costs'];	
+				$docs = (string)$_POST['docs'];	
+				if (($bank) || ($early_repay) || ($first_pay || ($credit_period || ($period_of_review || ($add_costs || ($docs) ) { 
+				$this->db->query('INSERT INTO `banks` SET `bank`=?, `early_repay`=?, `first_pay`=?, `credit_period`=?, `period_of_review`=?, `add_costs`=?, `docs`=?, `rate_in_rub`=?', array($bank, $early_repay, $first_pay, $credit_period, $period_of_review, $add_costs, $docs), 'id');
 				}
 		}
 		
