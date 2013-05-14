@@ -1,0 +1,32 @@
+body {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#nalog {
+	font-family: Verdana, helvetica;
+	font-size: 10px;
+	margin-right: 250px;
+}
+
+td,th {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.t1 {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#eeeeee none repeat scroll 0 0;
+}
+
+.tz {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#c1c1ff none repeat scroll 0 0;
+}
+

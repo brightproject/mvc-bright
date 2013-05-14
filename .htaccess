@@ -1,0 +1,7 @@
+RewriteEngine On
+#RewriteBase /tests/PHP-Basic-MVC-Framework/
+RewriteCond %{REQUEST_FILENAME} !-f
+#only for localhost
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ /index.php/$1
+AddDefaultCharset utf-8
