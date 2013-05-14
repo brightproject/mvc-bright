@@ -1,7 +1,7 @@
 <?php
 	abstract class baseModel{
-	protected $params;
-	protected $db;
+	// protected $params;
+	// protected $db;
 	public function __construct(){
 			require(__DIR__.'/../goDB/autoload.php');
 			\go\DB\autoloadRegister();
